@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de projetos desenvolvimento web">
+    <meta name="keywords" content="protfólio, desenvolvimento, web, projetos, programação, HTML, CSS, Javascript">
+    <title>Portfólio - Iasmin Carqueija</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b9881f378.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section id="intro">
+        <nav id="menu" class="centro">
+            <div id="dropdown">
+                <div id="btn-dropdown" class="btn">
+                    <i class="fa-solid fa-bars-staggered fa-lg btn-icons" onclick="dropdownMenu()"></i>
+                </div>    
+                <div id="dropdown-menu">
+                    <a  class="btn" href="#sobre">Sobre</a>
+                    <hr>
+                    <a  class="btn"  href="#cursos">Cursos</a>
+                    <hr>
+                    <a  class="btn"  href="#projetos">Projetos</a>
+                    <hr>
+                    <a  class="btn"  href="#contato">Contatos</a>
+                </div>
+            </div>
+            
+            <div id="container-lista-menu">
+                <ul id="selecao-menu" class="lista centro">
+                    <li><a class="btn btn-selecao" href="#sobre">Sobre</a></li>
+                    <li><a class="btn btn-selecao" href="#cursos">Cursos</a></li>
+                    <li><a class="btn btn-selecao" href="#projetos">Projetos</a></li>
+                    <li><a class="btn btn-selecao" href="#contato">Contatos</a></li>
+                </ul>
+            </div>
+            <div id="btn-layout" class="btn">
+                <i class="fa-solid fa-moon fa-lg btn-icons" onclick="darkMode()"></i>
+            </div>    
+        </nav>
+        
+        <div id="capa" class="centro responsivo">
+            <div id="container-texto-capa" class="texto-centralizado colunas">
+                <h1 id="nome-capa"><span>Iasmin</span> Carqueija</h1>
+                <h3 id="profissao">Desenvolvedora <span>Web</span></h3>
+                <div id="btn-capa">
+                    <a class="btn btn-body" href="#projetos">Ver Trabalhos</a>
+                    <a class="btn btn-body" href="#contato">Contacte-me</a>
+                </div>
+            </div>
+            <div id="container-img-capa">
+                <img id="img-capa"  src="./img/eu2-removebg.png" alt="Pessoa no Farol da Barra">
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="sobre" class="texto-centralizado">
+        <h2 class="grande">Sobre <span>Mim</span></h2>
+        <div id="container-sobre" class="centro responsivo">
+            <img id="img-rosto" class="colunas" src="./img/eu1.JPG">
+            <div id="container-texto-sobre" class="colunas destaque">
+                <h3 id="sobre-resumo">Sou uma <span>curiosa</span> desenvolvedora web junior de Salvador-BA, BR</h3>
+                <p id="sobre-descricao">Com ênfase em front-end, tenho conhecimento em HTML, CSS, Javascript, Python e Java. Sempre busco me desafiar e apresentar um trabalho melhor a cada projeto.<br>
+                Iniciei estudos na área das biológicas e trouxe para a programação a atenção aos detalhes, o raciocínio lógico, a solução de problemas e a busca pelo conhecimento. Mesmo não permanecendo na antiga área, meu amor pela natureza em sua totalidade está sempre presente.<br><br> 
+                Adoro jogos online, animações e quadrinhos, mas também gosto de esportes e atividades físicas.
+                Tenho como hobbie a música e a dança, sendo atualmente parte de um <a class="links" title="Grupo Cultural Wado" target="_blank" href="https://www.grupowado.com.br/"><span>grupo de percussão e danças japonesas.</span></a>
+                </p>
+                <div id="download-curriculo">
+                    <a class="btn btn-body" href="#" title="PDF" download>Download CV</a>
+                </div>    
+            </div>    
+        </div>
+    </section>
+    <hr>
+    <section id="cursos" class="container-slider texto-centralizado">
+        <h2 class="grande">Certificados de <span>Cursos</span> </h2>   
+        <div class="sliders centro">    
+            <div>
+                <button class="btn btn-voltar" onclick="back1()"><i class="fa-solid fa-caret-left fa-2xl"></i></button>
+            </div>
+            <ul class="lista lista-cartao centro">
+                    <li class="cartao1 selecionado1">    
+                        <div>
+                            <img class="img-cartao" src="./img/curso1.png" alt="Curso Introdução a Lógica de Programação">
+                        </div>
+                    </li>
+                    <li class="cartao1">    
+                        <div>
+                            <img class="img-cartao" src="./img/curso2.png" alt="Curso Noções Básicas da Internet">
+                        </div>
+                    </li>
+                    <li class="cartao1">    
+                        <div>
+                            <img class="img-cartao" src="./img/curso3.png" alt="Curso Noções Básicas da Programação">
+                        </div>
+                    </li>
+                    <li class="cartao1">    
+                        <div>
+                            <img class="img-cartao" src="./img/curso4.png" alt="Curso Versionamento de Código com Git e GitHub">
+                        </div>
+                    <li class="cartao1">    
+                        <div>
+                            <img class="img-cartao" src="./img/curso5.png" alt="Curso Noções Básicas sobre Git e GitHub">
+                        </div>
+                    </li>
+                    </li>
+                    <li class="cartao1">    
+                        <div>
+                            <img class="img-cartao" src="./img/curso6.png" alt="Curso Meu Primeiro Site - Turma 1 - Elas Na Tech">
+                        </div>
+                    </li>
+                    </li>
+            </ul>   
+            <div>
+                <button class="btn btn-avancar avancar-curso" onclick="next1()"><i class="fa-solid fa-caret-right fa-2xl"></i></button>
+            </div>
+        </div>              
+    </section>
+
+    <hr>
+
+    <section id="projetos" class="container-slider texto-centralizado">
+        <h2 class="grande">Projetos <span>Realizados</span></h2>
+        <div class="sliders centro">
+            <div>
+                <button class="btn btn-voltar voltar-curso" onclick="back2()"><i class="fa-solid fa-caret-left fa-2xl"></i></button>
+            </div>
+            <ul class="lista lista-cartao centro texto-centralizado">
+                <li class="cartao2 selecionado2">
+                    <h3>Projeto Currículo</h3>    
+                    <a href="https://github.com/IasminCarqueija/curriculo-atividade01-ElasNaTech.git" title="Repositório GitHub" target="_blank">
+                        <img class="img-cartao" src="./img/projeto-curriculo.png" alt="Projeto Currículo">
+                    </a>
+                    <p>Projeto proposto para o treino de HTML.</p>
+                    <details class="detalhes destaque">
+                        <summary>Mais informações...</summary>
+                        Primeiramente o projeto foi desenvolvido somente em um arquivo, com uma estilização simples diretamente no HTML. Posteriormente essa estilização foi passada para um arquivo externo CSS. Também passou por aperfeiçoamento no tipo de fonte e tamanho da mesma, ícones e no conteúdo do currículo em si. 
+                    </details>
+                </li>
+                <li class="cartao2">
+                    <h3>Projeto Cardápio</h3>    
+                    <a href="https://github.com/IasminCarqueija/cardapio-atividade02-ElasNaTech.git" title="Repositório GitHub" target="_blank">
+                        <img class="img-cartao" src="./img/projeto-cardapio.png" alt="Projeto Cardápio">
+                    </a>
+                    <p>Projeto proposto para o treino de HTML e CSS.</p>
+                    <details class="detalhes destaque">
+                        <summary>Mais informações...</summary>
+                        O objetivo do trabalho foi utilizar a tendência do e-commerce e da digitalização dos artigos de papel para praticar a estilização com CSS. Foram trabalhados conceitos de box model para o posicionamento das imagens, além do restante da estilização.
+                    </details>
+                </li>
+                <li class="cartao2"> 
+                    <h3>Projeto Site ODS</h3>   
+                    <a href="https://github.com/IasminCarqueija/siteODS-desafioFinal.git" title="Repositório GitHub" target="_blank">
+                        <img class="img-cartao" src="./img/projeto-ods.png" alt="Projeto ODS">
+                    </a>
+                    <p>Projeto proposto para o treino de HTML, CSS e responsividade.</p>
+                    <details class="detalhes destaque">
+                        <summary>Mais informações...</summary>
+                        O objetivo do projeto era a realização de uma página web com layout profissional utilizando recursos básicos. Também foram trabalhados conceitos de responsividade e design web.
+                    </details>
+                </li>
+            </ul>   
+            <div>
+                <button class="btn btn-avancar" onclick="next2()"><i class="fa-solid fa-caret-right fa-2xl"></i></button>
+            </div>
+        </div>         
+    </section>
+
+    <hr>
+
+    <section id="contato" class="texto-centralizado">
+        <h2 class="grande">Contacte-<span>me</span></h2>
+        <div id="container-contato" class="centro responsivo">    
+            <div id="formulario">
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <h3>Fale <span>Comigo</span></h3>
+                    <br><br>
+                    <input type="hidden" name="accessKey" value="3673e426-4210-4ce0-90eb-207ced1f329a">
+                    <input type="hidden" name="redirectTo" value="https://iasmincarqueija.github.io/">
+                    
+                    <label for="nome"></label>
+                    <input type="text" id="nome" name="name" placeholder="Nome" required maxlength="30" minlength="2">
+                    <span></span>
+                    
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required maxlength="50">
+                    <span></span>
+                    <br><br>
+
+                    <label for="assunto"></label>
+                    <input type="text" id="assunto" name="subject" placeholder="Assunto" required>
+                    <span></span>
+                    <br><br>
+
+                    <label for="mensagem"></label>
+                    <textarea id="mensagem" name="message" placeholder="Mensagem" required></textarea>
+                    <span></span>
+                    <br><br>
+
+                    <input type="submit" value="Enviar" id="enviar" class="btn">
+                </form>
+            </div>
+            <div id="contact-info" class="colunas">
+                <h3><span>Informações</span> de Contato</h3>
+                <br><br>
+                <div>
+                    <h4>Nome</h4>
+                    <p>Iasmin de Borba Carqueija</p>
+                    <br>
+
+                    <h4>Localização</h4>
+                    <p>Salvador-BA</p>
+                    <br>
+
+                    <h4>Email</h4>
+                    <p>ibcarqueija@hotmail.com</p>
+                    <br>
+
+                    <h4>Telefone</h4>
+                    <a class="btn-info" title="Whatsapp" href="#"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+                    <br><br>
+
+                    <h4>GitHub</h4>
+                    <a class="btn-info" title="IasminCarqueija" target="_blank" href="https://github.com/IasminCarqueija"><i class="fa-brands fa-github-alt fa-xl"></i></i></a>
+                    <br><br>
+
+                    <h4>LinkedIn</h4>
+                    <a class="btn-info" title="iasmin-bcarqueija" target="_blank" href="https://www.linkedin.com/in/iasminbcarqueija/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <footer id="container-rodape" class="texto-centralizado">
+        <p>Coyright &copy;2023 | Design por Iasmin Carqueija | Fotos por <a class="links" href="https://instagram.com/irleyregofotografia?igshid=MzRlODBiNWFlZA==" title="Instagram" target="_blank">@irleyregofotografia</a> | Favicon criado por <a class="links" href="https://www.flaticon.com/br/icones-gratis/pasta" title="pasta ícones" target="_blank">iconixar - Flaticon </a> | Imagem de fundo por <a class="links" href="https://br.freepik.com/vetores-gratis/banner-abstrato-com-design-de-plexo-colorido_43194105.htm#query=conection&position=7&from_view=search&track=sph" target="_blank">kjpargeter</a> no Freepik</p>
+    </footer>
+    <a id="btn-up" class="btn-selecao" title="Voltar ao topo" href="#"><i class="fa-solid fa-circle-chevron-up fa-2xl"></i></a>
+
+    <script src="index.js"></script>
+</body>
+</html>

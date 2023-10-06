@@ -1,0 +1,45 @@
+@media all and (max-width: 768px) {
+    #container-texto-capa {
+        margin-top: 40px;
+        font-size: 1.5em;
+    }
+    #container-img-capa {
+        margin-top: -85px;
+    }
+    .btn {
+        font-size: 1em;
+        padding: 5px;
+    }
+    #container-lista-menu {
+        visibility: hidden;
+        display: none;
+    }
+    .responsivo {
+        display: flex;
+        flex-direction: column;
+    }
+    .sliders, .lista-cartao {
+        margin-top: -10px;
+    }
+    .sliders {
+        gap: 40%;
+    }
+    .lista-cartao .img-cartao {
+        min-width: 340px; 
+    }
+    .btn-avancar, .btn-voltar {
+        padding: 10px 8px;
+        font-size: 10px;
+    }
+    #container-texto-sobre, #contact-info {
+        width: 85%;
+    }
+    #contact-info {
+        padding: 10px;
+    }
+    #sobre, #contato {
+        position: relative;
+        margin: 30px auto;
+        height: fit-content;
+    }
+}

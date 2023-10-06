@@ -1,0 +1,365 @@
+/*
+- Todas as seções serão altura 100% ok
+- Paleta de cores:
+Name: Cultured
+Hex: #F4F4F4
+Name: Chocolate Kisses
+Hex: #451A24
+Name: Golden Gate Bridge Orange
+Hex: #B63331
+Name: Vampire Black
+Hex: #090909
+*/
+* {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-image: linear-gradient(110deg, #F4F4F4, #451a24be);
+    color: #090909;
+    padding: 5px;
+    font-family: 'EB Garamond', serif;
+}
+.dark-mode {
+    background-image: linear-gradient(110deg, #090909f3, #F4F4F4); 
+    color: #f5eded;
+    text-shadow: 0px 2px 10px #090909;
+}
+.menu-dark-mode {
+    background-color: #090909f3;
+    border-radius: 20px;
+}
+.links {
+    text-decoration: none;
+    color: #090909;
+}
+.links:hover {
+    text-decoration: underline;
+}
+section {
+    height: 100vh;
+    background-image: url(./img/bg-capa2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.texto-centralizado {
+    text-align: center;
+}
+.colunas {
+    width: 45%;
+}
+.centro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grande {
+    font-size: 2em;
+}
+span {
+    color: #B63331;
+}
+.destaque {
+    background-color: #666666c9;
+    border-radius: 5px;
+}
+
+
+
+/*Botão 'voltar ao topo'*/
+#btn-up {
+    position: fixed;
+    display: none;
+    z-index: 3;
+    bottom: 50px; 
+    right: 50px;
+}
+#btn-up.aparecer-up {
+    display: block;
+}
+@keyframes upAnimation {
+    from {transform: translateY(0);}
+    to {transform: translateY(-20px);}
+}
+#btn-up:hover {
+    color: #B63331;
+    animation: upAnimation 1s infinite;
+}
+
+
+/*Menu de navegação*/
+#menu {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    z-index: 3;
+    background-color: #f5eded;
+    border-bottom: 3px solid #B63331;
+    justify-content: space-between;
+    font-size: 1.125em;
+}
+.lista {
+    list-style: none;
+}
+.btn-selecao {
+    float: left;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #090909;
+    font-size: 1.125em;
+}
+.btn-icons {
+    cursor: pointer;
+    margin: auto 40px;
+}
+#btn-layout, #btn-dropdown {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+/*Dropdown*/
+#dropdown-menu a{
+    display: block;
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #090909;
+    height: 30px;
+    font-size: 1em;
+}
+#dropdown-menu hr {
+    margin: 0 10px;
+}
+#dropdown-menu {
+    position: absolute;
+    width: 100%;
+    height: 226px;
+    margin-top: 15px;
+    background-color: #f5ededb9;
+    border-bottom: 3px solid #B63331;
+    text-align: center;
+    display: none;
+}
+#dropdown-menu.aparecer-menu {
+    display: block;
+}
+
+/*Botões*/
+.btn{
+    transition: background-color 0.3s ease-in-out;
+    padding: 10px;
+    border-radius: 5px;
+}
+.btn-body:link, .btn-body:visited {
+    color: #F4F4F4;
+    text-decoration: none;
+    background-color: #B63331;
+}
+.btn:hover {
+    background-color: #b36765;
+    transition: background-color 0.3s ease-in-out;
+}
+.btn-body {
+    font-size: 1.125em;
+}
+
+
+
+/*Capa do Portfólio*/
+#intro {
+    background-repeat: space;
+    background-position: top right;
+}
+#capa {
+    margin-top: 60px;
+    font-family: 'Satisfy', cursive;
+    height: 100%;
+    text-shadow: 0px 3px 8px #090909;
+}
+#container-texto-capa {
+    width: 45%;
+    font-size: 2.3em;
+}
+#container-img-capa {
+    width: 45%;
+    max-width: 500px;
+    min-width: 270px;
+    height: 100%;
+    margin: 5vh 30px;
+}
+@keyframes blurAnimation {
+    from {filter:blur(15px) grayscale(10);}
+    to {filter: blur(0px) grayscale(10);}
+}
+#img-capa {
+    width: 100%;
+    border-radius: 5px;
+    animation: blurAnimation 3s;
+    filter: grayscale(10);
+}
+
+/*Seção Sobre*/
+#img-rosto {
+    width: 50%;
+    min-width: 90px;
+    max-width: 300px;
+    border-radius: 5px;
+    outline: outset grey; 
+}
+#sobre, #contato {
+    margin: 8% 20px 0;
+}
+#container-sobre, #container-contato {
+    margin-top: 10%;
+    gap: 80px;
+    font-size: 1.2em;
+    max-height: 60%;
+}
+#btn-capa, #download-curriculo {
+    margin: 20px 0;
+}
+#btn-capa {
+    font-size: medium;
+}
+#container-texto-sobre, #contact-info {
+    text-shadow: 0 2px 8px #F4F4F4;
+}
+
+
+/*Carrosseis*/
+.sliders {
+    gap: 35%;
+    transform: translateY(500%);
+}
+.img-cartao {
+    width: 45vw;
+    border-radius: 5px;
+    transition: width .2s ease-in-out;
+    box-shadow: 0 5px 10px #F4F4F4;
+}
+@keyframes growAnimation {
+    from {width: 45vw;}
+    to {width: 65vw;}
+}
+.img-cartao:hover {
+    animation: growAnimation .5s linear;
+    width: 65vw;
+}
+.container-slider h2{
+    margin: 10% auto;
+}
+.btn-voltar, .btn-avancar {
+    background-color: #f5eded;
+    z-index: 2;
+    padding: 15px 12px;
+}
+.lista-cartao {
+    position: relative;
+    padding: 0;
+    font-size: 1.125em;
+}
+.cartao1.selecionado1, .cartao2.selecionado2 {
+    opacity: 1;
+    z-index: 1;
+}
+.cartao1, .cartao2 {
+    opacity: 0;
+    position: absolute;
+}
+.lista-cartao h3 {
+    margin-bottom: 30px;
+} 
+.lista p, details {
+    margin-top: 5px;
+}
+.lista p {
+    font-weight: 600;
+}
+
+
+
+/*Formulário*/
+form {
+    width: 100%;
+}
+input#nome, input#email {
+    margin: 5px;
+}
+input#assunto, textarea#mensagem, input#enviar {
+    width: 95%;
+}
+textarea#mensagem {
+    height: 80px;
+    overflow-y: scroll;
+}
+input, textarea {
+    padding: 5px;
+    resize: none;
+    border-radius: 5px;
+    border: solid 2px #090909ad;
+    outline: 0;
+}
+input:focus, textarea:focus {
+    border-color: #090909 !important;
+}
+input:invalid, textarea:invalid {
+    border-color: #B63331;
+}
+input:valid, textarea:valid {
+    border-color: #6f9418;
+}
+#enviar {
+    border: solid 2px #090909ad;
+}
+form span {
+    position: relative;
+}
+input:invalid + span::before, textarea:invalid + span::before {
+    content: '✖';
+    color: #B63331;
+    font-size: small;
+}
+input:valid+ span::before, textarea:valid + span::before {
+    content: '✓';
+    color: #6f9418;
+    font-size: small;
+}
+input + span::before {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+textarea + span::before {
+    position: absolute;
+    right: 22px;
+    bottom: 76px;
+}
+
+
+#contact-info {
+    background-color: #4b4a4ac9;
+    border-radius: 5px;
+    padding: 30px 0;
+    max-width: 450px;
+}
+.btn-info {
+    text-decoration: none;
+    color: #090909;
+}
+
+#container-rodape {
+    height: fit-content;
+    padding: 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09090931;
+}
+.fa-brands {
+    margin-top: 20px;
+}
