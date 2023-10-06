@@ -1,0 +1,17 @@
+#aviso {
+    flex-direction: column;
+    background-color: #4b4a4ac9;
+    position: relative;
+    top: 30%;
+    margin: 0 70px;
+    padding: 100px;
+    box-shadow: 0 5px 10px #F4F4F4;
+    border-radius: 5px;
+}
+#aviso h2 {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0 0 10px #F4F4F4;
+    font-weight: 500;
+}
+#aviso a {
+    margin-top: 20px;
+}

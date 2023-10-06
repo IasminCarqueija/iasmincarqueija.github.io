@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de projetos desenvolvimento web">
+    <meta name="keywords" content="protfólio, desenvolvimento, web, projetos, programação, HTML, CSS, Javascript">
+    <title>Portfólio - Iasmin Carqueija</title>
+    <link rel="icon" href="./img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <link rel="stylesheet" href="enviado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Satisfy&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b9881f378.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <section id="intro">
+        <nav id="menu" class="centro">
+            <div id="dropdown">
+                <div id="btn-dropdown" class="btn">
+                    <i class="fa-solid fa-bars-staggered fa-lg btn-icons" onclick="dropdownMenu()"></i>
+                </div>    
+                <div id="dropdown-menu">
+                    <a  class="btn" href="index.html#sobre">Sobre</a>
+                    <hr>
+                    <a  class="btn"  href="index.html#cursos">Cursos</a>
+                    <hr>
+                    <a  class="btn"  href="index.html#projetos">Projetos</a>
+                    <hr>
+                    <a  class="btn"  href="index.html#contato">Contatos</a>
+                </div>
+            </div>
+            
+            <div id="container-lista-menu">
+                <ul id="selecao-menu" class="lista centro">
+                    <li><a class="btn btn-selecao" href="index.html#sobre">Sobre</a></li>
+                    <li><a class="btn btn-selecao" href="index.html#cursos">Cursos</a></li>
+                    <li><a class="btn btn-selecao" href="index.html#projetos">Projetos</a></li>
+                    <li><a class="btn btn-selecao" href="index.html#contato">Contatos</a></li>
+                </ul>
+            </div>
+            <div id="btn-layout" class="btn">
+                <i class="fa-solid fa-moon fa-lg btn-icons" onclick="darkMode()"></i>
+            </div>    
+        </nav>
+        
+        <div id="aviso" class="centro texto-centralizado">
+            <h2>Formulário enviado com sucesso.</h2>
+            <a class="btn btn-body" href="index.html" title="Home">Voltar</a>
+        </div>
+    </section>
+
+    <footer id="container-rodape" class="texto-centralizado">
+        <p>Coyright &copy;2023 | Design por Iasmin Carqueija | Fotos por <a class="links" href="https://instagram.com/irleyregofotografia?igshid=MzRlODBiNWFlZA==" title="Instagram" target="_blank">@irleyregofotografia</a> | Favicon criado por <a class="links" href="https://www.flaticon.com/br/icones-gratis/pasta" title="pasta ícones" target="_blank">iconixar - Flaticon </a> | Imagem de fundo por <a class="links" href="https://br.freepik.com/vetores-gratis/banner-abstrato-com-design-de-plexo-colorido_43194105.htm#query=conection&position=7&from_view=search&track=sph" target="_blank">kjpargeter</a> no Freepik</p>
+    </footer>
+    <a id="btn-up" class="btn-selecao" title="Voltar ao topo" href="#"><i class="fa-solid fa-circle-chevron-up fa-2xl"></i></a>
+
+    <script src="index.js"></script>
+</body>
+</html>

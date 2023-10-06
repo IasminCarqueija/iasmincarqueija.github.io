@@ -16,7 +16,8 @@ Utilizar conhecimentos adquiridos durante o curso para a criação de um portif�
 
 ## Aprimoramentos
 
-| Nº | Descrição | Problemas |
+| Nº | Descrição | Problemas Corrigidos |
 | :----: | :--------: | :-------------: |
-|  V1.0 |Estrutura da página em HTML + estilização externa em CSS + usabilidade com JavaScript |  N.A      |
+|  V1.0 | Estrutura da página em HTML + estilização externa em CSS + usabilidade com JavaScript |  N.A      |
+|  V1.2 | Acréscimos no conteúdo + ajustes menores  |  Correção na responsividade para celular      |
 
